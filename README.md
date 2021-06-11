@@ -1,4 +1,4 @@
-# candle_app
+# HOME INSPECTION SYSTEM
 
 ## Project setup
 ```
