@@ -1,0 +1,105 @@
+.card-cus {
+  margin-left: 20px;
+  margin-right: 20px;
+  // background: var(--ion-color-primary);
+  // padding-left: 12px;
+  // width: 100%;
+  // margin-top: 20px;
+  // border-radius: 10px;
+  // box-shadow: 10px 10px 5px 0px #d7d8da;
+  // -webkit-box-shadow: 10px 10px 5px 0px #989aa2;
+  // -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  // color: #ffffffab;
+}
+
+p.lb-txt {
+  font-size: 12px;
+}
+
+p.hz-txt {
+  margin-top: -9px;
+}
+
+p.date-field {
+  margin-top: -9px;
+}
+
+ion-icon.icn-top.ios.hydrated {
+  margin-right: 7px;
+}
+
+ion-icon.icn-top.md.hydrated {
+  margin-right: 7px;
+}
+
+ion-button.cus-top-selection-btn.createins.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  --background: none;
+  color: var(--ion-color-primary);
+  border-radius: 11px;
+  margin-left: 16px;
+  margin-top: 10px;
+  --border-radius: 11px;
+  text-transform: capitalize;
+}
+
+ion-button.cus-top-selection-btn.createins.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  --background: none;
+  color: var(--ion-color-primary);
+  border-radius: 11px;
+  margin-left: 16px;
+  margin-top: 10px;
+  --border-radius: 11px;
+  text-transform: capitalize;
+}
+
+button.edit-btn {
+  float: right;
+  margin-top: 9px;
+  margin-right: 17px;
+  display: flex;
+  border-radius: 17px;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 7px;
+  color: #222428;
+}
+
+ion-icon.edit-icn.md.hydrated {
+  color: #222428;
+  font-size: 18px;
+  margin-top: -2px;
+}
+
+ion-icon.edit-icn.ios.hydrated {
+  color: #222428;
+  font-size: 18px;
+  margin-top: -2px;
+}
+
+ion-row.row-cls.md.hydrated {
+  background: var(--ion-color-primary);
+  padding-left: 12px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px #d7d8da;
+  -webkit-box-shadow: 10px 10px 5px 0px #989aa2;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #ffffffab;
+  margin-left: 14px;
+}
+
+ion-row.row-cls.ios.hydrated {
+  background: var(--ion-color-primary);
+  padding-left: 12px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px #d7d8da;
+  -webkit-box-shadow: 10px 10px 5px 0px #989aa2;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #ffffffab;
+  margin-left: 14px;
+}

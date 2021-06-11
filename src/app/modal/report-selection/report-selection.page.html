@@ -1,0 +1,150 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Report Selection</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-icon
+        (click)="closeM()"
+        class="icn-close"
+        name="close-outline"
+      ></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <form [formGroup]="createInpForm" (ngSubmit)="saveReport()" novalidate>
+      <!-- <p class="main-ttl"></p> -->
+
+      <ion-item>
+        <!-- <ion-label position="floating">The House In Perspective</ion-label> -->
+
+        <div class="inp-container">
+          <p class="lb-ttl-cs">The House In Perspective</p>
+          <ion-select interface="popover" formControlName="houseInModes">
+            <ion-select-option
+              *ngFor="let mode of HouseInModes_"
+              [value]="mode.name"
+              >{{mode.name}}</ion-select-option
+            >
+          </ion-select>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Approximate Age of House (in Years)</p>
+
+          <ion-input
+            class="num-inp"
+            width="80px !important"
+            type="number"
+            formControlName="ApproximateAgeofHouse"
+          ></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Additional Comment</p>
+          <ion-textarea
+            formControlName="AdditionalComment"
+            rows="3"
+          ></ion-textarea>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">The main entrance Is Considered To Be Facing:</p>
+          <ion-select multiple="true" formControlName="MainEnteranceConsidered">
+            <ion-select-option
+              *ngFor="let mode of MainEnteranceConsidered"
+              [value]="mode.name"
+              checked="false"
+              >{{mode.name}}</ion-select-option
+            >
+          </ion-select>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <!-- <ion-label position="floating"
+          ></ion-label
+        > -->
+
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Weather Condition At Time of Inspection:</p>
+
+          <ion-select
+            formControlName="WeatherConditions"
+            name="selectCode"
+            multiple="true"
+            [selectedText]="selectedCodeValue ? selectedCodeValue.toString() : selectedCodeValue"
+            (ionChange)="codeSelected()"
+          >
+            <ion-select-option
+              *ngFor="let mode of WeatherConditions"
+              [value]="mode.name"
+            >
+              {{mode.name}}
+            </ion-select-option>
+          </ion-select>
+
+          <!-- <ion-select multiple="true" formControlName="WeatherConditions">
+            <ion-select-option
+              *ngFor="let mode of WeatherConditions"
+              [value]="mode.name"
+              checked="false"
+              >{{mode.name}}</ion-select-option
+            >
+          </ion-select> -->
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Recent Weather Conditions:</p>
+
+          <ion-select formControlName="RecentWeatherConditions">
+            <ion-select-option
+              *ngFor="let mode of RecentWeatherConditions"
+              [value]="mode.name"
+              checked="false"
+              >{{mode.name}}</ion-select-option
+            >
+          </ion-select>
+        </div>
+
+        <div
+          class="error"
+          *ngIf="createInpForm.get('RecentWeatherConditions').hasError('required') && createInpForm.get('RecentWeatherConditions').touched"
+        >
+          One must be selected.
+        </div>
+      </ion-item>
+
+      <ion-row class="row-form-ftr">
+        <ion-col style="text-align: center">
+          <ion-button (click)="closeM()" class="cancel-btn">
+            <ion-icon class="icn-c" name="close-outline"></ion-icon>
+
+            Cancel
+          </ion-button>
+        </ion-col>
+        <ion-col style="text-align: center">
+          <ion-button
+            [disabled]="!createInpForm.valid"
+            class="CreateInspBtn"
+            type="submit"
+          >
+            <ion-icon class="icn-c" name="create-outline"></ion-icon>
+
+            Update
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>
