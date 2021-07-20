@@ -1,0 +1,47 @@
+ion-button.CreateInspBtn.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  min-width: 100px;
+  border: none;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --border: none;
+  text-transform: capitalize;
+}
+
+ion-button.CreateInspBtn.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  min-width: 100px;
+  border: none;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --border: none;
+  text-transform: capitalize;
+}
+
+.row-card {
+  background: var(--ion-color-primary);
+  padding: 1px;
+  padding-left: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+p.main-ttl {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+}
+
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+ion-select {
+  margin-left: -17px;
+}
+
+ion-select {
+  max-width: 70% !important;
+}

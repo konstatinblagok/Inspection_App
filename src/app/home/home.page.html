@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start"> </ion-buttons>
+    <ion-title> Home Inspection</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <div
+            class="cus-top-selection-btn createins"
+            (click)="CreateInspectionForm()"
+          >
+            <ion-icon class="add-circle-ic" name="create-outline"></ion-icon>
+
+            <p class="menu-txt">Create Inspection</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-row>
+        <ion-col>
+          <div class="cus-top-selection-btn createins" (click)="SavedPDFSHow()">
+            <ion-icon class="add-circle-ic" name="save-outline"></ion-icon>
+
+            <p class="menu-txt">Saved PDF</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-item> -->
+  </ion-list>
+
+  <div class="container-home">
+    <ion-row class="row-cls" *ngFor="let m of allDocsCreated">
+      <!-- <ion-row>
+        <ion-col> -->
+      <button class="edit-button" (click)="openCommonModal(m)">
+        <ion-icon class="edit-icn" name="create-outline"></ion-icon>
+      </button>
+      <!-- </ion-col>
+      </ion-row> -->
+
+      <div class="card-cus" *ngFor="let c of m.client_Info">
+        <ion-row>
+          <ion-col>
+            <div class="cont-txt-lb">
+              <p class="lb-txt">Client Name</p>
+              <p class="hz-txt">{{c.clientName}}</p>
+            </div>
+
+            <div class="cont-txt-lb">
+              <p class="lb-txt">inspectionAddress</p>
+              <p class="hz-txt">{{c.inspectionAddress}}</p>
+            </div>
+          </ion-col>
+
+          <ion-col>
+            <div class="cont-txt-lb">
+              <p class="lb-txt">Inspector</p>
+              <p class="hz-txt">{{c.inspector}}</p>
+            </div>
+
+            <div class="cont-txt-lb">
+              <p class="lb-txt">Report Number</p>
+              <p class="hz-txt">{{c.reportNumber}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <div class="date-only">
+          <p class="lb-txt">Inspection Date</p>
+          <p class="date-field">{{c.inspectionDate}}</p>
+        </div>
+      </div>
+    </ion-row>
+  </div>
+</ion-content>

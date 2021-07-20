@@ -1,0 +1,129 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Home Inspection System</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container2">
+    <ion-row>
+      <div class="contain-logo">
+        <img src="../../assets/logo-only.png" class="logoimg" />
+      </div>
+    </ion-row>
+
+
+<div class="btm">
+
+        <ion-button class="cont-btn" (click)="GoNavig()"> Continue </ion-button>
+      </div>
+  </div>
+</ion-content>
+ -->
+
+<!--<ion-header mode="ios">-->
+<!--  <ion-toolbar>-->
+<!--    <ion-title class="ion-text-center">Walkthrough</ion-title>-->
+<!--  </ion-toolbar>-->
+<!--</ion-header>-->
+
+<ion-content>
+  <ion-slides
+    #slides
+    pager="true"
+    [options]="slideOpts"
+    (ionSlideWillChange)="getIndex($event)"
+  >
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="title">Home Inspection System</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <img src="../../assets/logo-only.png" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img class="img-src" src="../../assets/Res/CreatePdf1.png" />
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-label class="txt-header"></ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label class="slide-content">Create PDF</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img class="img-src2" src="../../assets/Res/create3.png" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label class="txt-header"></ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label class="slide-content">Design PDF.</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img class="img-src" src="../../assets/Res/CreatePdf2.png" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label class="txt-header">Get Started</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <!-- <ion-label class="slide-content"></ion-label> -->
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer mode="ios" no-border>
+  <ion-row>
+    <ion-col style="text-align: center">
+      <ion-button class="customButton" (click)="GoNavig()"
+        >{{slideLast? 'Start' : 'Skip' }}</ion-button
+      >
+    </ion-col>
+    <ion-col style="text-align: center">
+      <ion-button
+        class="customButton"
+        (click)="slides.slideNext()"
+        [disabled]="slideLast"
+        >Next</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-footer>

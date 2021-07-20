@@ -1,0 +1,80 @@
+p.main-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.row-card {
+  background: var(--ion-color-primary);
+  padding: 1px;
+  padding-left: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: var(--ion-color-primary);
+  color: white;
+  font-weight: bold;
+}
+
+.highlight2 {
+  // background-color: var(--ion-color-medium);
+  color: var(--ion-color-primary);
+  font-weight: bold;
+}
+.contain-crds {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+ion-button.CreateInspBtn.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  margin-bottom: 24px;
+}
+
+ion-button.CreateInspBtn.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  margin-bottom: 24px;
+}
+
+p.selection-name {
+  font-size: 13px;
+}
+
+.data-ui {
+  max-width: 239px;
+}
+
+@media only screen and (max-width: 380px) {
+  .data-ui {
+    max-width: 178px !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .data-ui {
+    max-width: 168px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .data-ui {
+    max-width: 158px !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .data-ui {
+    max-width: 148px !important;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .data-ui {
+    max-width: 131px !important;
+  }
+}
+
+ion-item {
+  --padding-end: 0px;
+  --inner-padding-end: 0px;
+  // here other custom CSS from documentation
+}

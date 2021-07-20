@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start"
+      >Inspection System for {{clientDetails.clientName}}</ion-title
+    >
+
+    <ion-buttons slot="end">
+      <ion-icon
+        (click)="closeM()"
+        class="icn-close"
+        name="close-outline"
+      ></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-row>
+      <ion-col (click)="goToReportOverview()">
+        <div class="row-card">
+          <p class="selection-name">Report Overview</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col
+        size="6"
+        *ngFor="let n of inspectionTypes"
+        (click)="goToSelection(n)"
+      >
+        <div class="row-card">
+          <p class="selection-name">{{n.name}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-row>
+    <ion-col style="text-align: center">
+      <ion-spinner *ngIf="PreviewPDF" name="circles"></ion-spinner>
+
+      <button *ngIf="!PreviewPDF" class="btn-f" (click)="previewPDF()">
+        <ion-icon class="prev-icns" name="eye-outline"></ion-icon>
+
+        Preview
+      </button>
+
+      <ion-spinner *ngIf="DownloadPDF" name="circles"></ion-spinner>
+
+      <button *ngIf="!DownloadPDF" class="btn-f" (click)="DownloadPdf_()">
+        <ion-icon class="icn-down" name="download-outline"></ion-icon>
+
+        Download
+      </button>
+    </ion-col>
+    <!-- <ion-col style="text-align: center">
+      <button class="btn-f" (click)="downloadPdf()" *ngIf="pdfObjBtn">
+        Download PDF
+      </button>
+    </ion-col> -->
+  </ion-row>
+</ion-footer>

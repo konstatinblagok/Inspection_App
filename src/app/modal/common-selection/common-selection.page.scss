@@ -1,0 +1,35 @@
+ion-title.md.title-default.hydrated {
+  font-size: 17px;
+}
+
+ion-title.ios.title-default.hydrated {
+  font-size: 17px;
+}
+
+.contain-crds {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+p.selection-name {
+  font-size: 14px;
+}
+
+ion-content.md.hydrated {
+  --background: var(--ion-color-c-dark);
+}
+
+ion-content.ios.hydrated {
+  --background: var(--ion-color-c-dark);
+}
+
+.container {
+  background: var(--ion-color-c-dark);
+}
+
+.row-card {
+  background: var(--ion-color-c-dark);
+  color: #ffffffab;
+  /* font-size: 18px; */
+}

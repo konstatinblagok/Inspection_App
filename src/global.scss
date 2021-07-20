@@ -1,0 +1,247 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+* {
+  font-family: sans-serif;
+}
+
+button.btn-f {
+  background: none;
+  font-size: 16px;
+  padding: 12px;
+  color: var(--ion-color-primary);
+}
+
+ion-button.Back-btn.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  --background: none;
+  color: var(--ion-color-primary);
+  text-transform: capitalize;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --color: var(--ion-color-primary);
+}
+
+ion-button.Back-btn.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  --background: none;
+  color: var(--ion-color-primary);
+  text-transform: capitalize;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --color: var(--ion-color-primary);
+}
+
+ion-icon.icn-c.ios.hydrated {
+  margin-right: 3px;
+}
+
+ion-icon.icn-c.md.hydrated {
+  margin-right: 3px;
+}
+ion-icon.icn-close.ios.hydrated {
+  font-size: 28px;
+  background: var(--ion-color-primary);
+  border-radius: 60px;
+  padding: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+ion-icon.icn-close.md.hydrated {
+  font-size: 28px;
+  background: var(--ion-color-primary);
+  border-radius: 60px;
+  padding: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+ion-button.CreateInspBtn.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  min-width: 100px;
+  border: none;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --border: none;
+  text-transform: capitalize;
+}
+
+ion-button.CreateInspBtn.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  min-width: 100px;
+  border: none;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --border: none;
+  text-transform: capitalize;
+}
+
+ion-button.remv-btn.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  min-width: 100px;
+  border: none;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --border: none;
+  text-transform: capitalize;
+}
+
+ion-button.remv-btn.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  min-width: 100px;
+  border: none;
+  border-radius: 11px;
+  --border-radius: 11px;
+  --border: none;
+  text-transform: capitalize;
+}
+
+ion-icon.prev-icn.md.hydrated {
+  margin-right: 3px;
+  font-size: 23px;
+}
+button.btn-f {
+  display: inline-flex;
+}
+
+p.main-title.vie {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+ion-icon.prev-icn.ios.hydrated {
+  margin-right: 3px;
+  font-size: 23px;
+}
+
+.row-card {
+  padding: 1px;
+  padding-left: 7px;
+  color: var(--ion-color-primary);
+  cursor: pointer;
+  border: none;
+
+  --border: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  /* background: black; */
+  box-shadow: 3px 3px #888888;
+  margin-top: 6px;
+  /* font-size: 18px; */
+}
+
+.container {
+  border-radius: 13px;
+  background: white;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 14px;
+}
+
+ion-toolbar.toolbar-title-default.md.in-toolbar.hydrated {
+  --background: var(--ion-color-primary);
+  color: var(--ion-color-light);
+  font-family: "Lora-Bold";
+}
+ion-toolbar.toolbar-title-default.ios.in-toolbar.hydrated {
+  --background: var(--ion-color-primary);
+  color: var(--ion-color-light);
+  font-family: "Lora-Bold";
+}
+
+ion-row.row-form-ftr.md.hydrated {
+  margin-top: 37px;
+}
+
+ion-row.row-form-ftr.ios.hydrated {
+  margin-top: 37px;
+}
+
+* {
+  font-family: "Lora";
+}
+
+p.lb-ttl-cs {
+  font-size: 13px;
+  margin-top: 15px;
+  margin-bottom: 2px;
+  color: #383a3ec2;
+}
+ion-select {
+  min-width: 173px;
+}
+
+.cont-input {
+  border-radius: 13px;
+  background: white;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 14px;
+}
+p.txt_.Inside {
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.popover-content {
+  --min-width: 100% !important;
+}
+
+p.main-title {
+  padding-top: 6px;
+}
+
+p.main-title {
+  cursor: pointer;
+}
+
+.item-rw {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+ion-checkbox.custm-check {
+  margin-right: 6px;
+  border-radius: 60px;
+  --border-radius: 60px;
+  min-width: 19px;
+}
+
+p.label-inside {
+  display: contents;
+}
+
+.input-etr {
+  background: antiquewhite;
+  padding-left: 5px;
+  padding-top: 7px;
+}

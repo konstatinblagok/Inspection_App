@@ -1,0 +1,7 @@
+{
+  "name": "HomeInspectionApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

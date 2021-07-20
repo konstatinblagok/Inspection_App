@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Inspection</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-icon
+        (click)="closeM()"
+        class="icn-close"
+        name="close-outline"
+      ></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <form [formGroup]="createInpForm" (ngSubmit)="saveReport()" novalidate>
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Client Name</p>
+
+          <ion-input type="text" formControlName="clientName"></ion-input>
+        </div>
+      </ion-item>
+
+      <!-- <span
+        class="errorMessage"
+        *ngIf="errorControl.clientName.errors?.required"
+      >
+        Client name is required.
+      </span> -->
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Inspector</p>
+          <ion-input type="text" formControlName="inspector"></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Report Number</p>
+          <ion-input type="text" formControlName="reportNumber"></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Inspection Date</p>
+
+          <ion-input type="date" formControlName="inspectionDate"></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div class="inp-container">
+          <p class="lb-ttl-cs">Inspection Address</p>
+          <ion-textarea
+            formControlName="inspectionAddress"
+            rows="3"
+          ></ion-textarea>
+        </div>
+      </ion-item>
+
+      <ion-row class="row-form-ftr">
+        <ion-col style="text-align: center">
+          <ion-button (click)="closeM()" class="cancel-btn">
+            <ion-icon class="icn-c" name="close-outline"></ion-icon>
+
+            Cancel
+          </ion-button>
+        </ion-col>
+        <ion-col *ngIf="!UpdateNow" style="text-align: center">
+          <ion-button
+            [disabled]="!createInpForm.valid"
+            class="CreateInspBtn"
+            type="submit"
+          >
+            <ion-icon class="icn-c" name="create-outline"></ion-icon>
+
+            Create
+          </ion-button>
+        </ion-col>
+
+        <ion-col *ngIf="UpdateNow" style="text-align: center">
+          <ion-button
+            (click)="getDataTo_Update()"
+            [disabled]="!createInpForm.valid"
+            class="CreateInspBtn"
+          >
+            <ion-icon class="icn-c" name="create-outline"></ion-icon>
+
+            Update
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <!-- <ion-row>
+    <ion-col style="text-align: center">
+      <button class="btn-f" (click)="createPdf()">Create PDF</button>
+    </ion-col>
+    <ion-col style="text-align: center">
+      <button class="btn-f" (click)="downloadPdf()" *ngIf="pdfObjBtn">
+        Download PDF
+      </button>
+    </ion-col>
+  </ion-row> -->
+</ion-footer>

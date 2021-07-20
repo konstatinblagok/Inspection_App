@@ -1,0 +1,163 @@
+// .contain-logo {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// img.logoimg {
+//   margin-top: 37px;
+// }
+
+// ion-content.md.hydrated {
+//   --background: white;
+// }
+
+// ion-content.ios.hydrated {
+//   --background: white;
+// }
+
+ion-slides {
+  height: 100%;
+}
+
+.slide-content {
+  color: #666666;
+}
+
+.customButton:hover {
+  --background: var(--ion-color-primary);
+  box-shadow: -10px -10px 20px rgb(56 58 58 / 91%),
+    10px 10px 20px rgb(17 28 26 / 91%);
+  border-radius: 11px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 33px;
+
+  font-size: 16px;
+  --border-radius: 11px;
+  text-transform: capitalize;
+  font-family: "Avenir";
+  color: white;
+  margin-bottom: 22px;
+}
+
+.customButton {
+  width: 55%;
+  --background: var(--ion-color-primary);
+  box-shadow: -10px -10px 20px #ec763d, 10px 10px 20px #ec763d;
+  border-radius: 11px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 33px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Avenir";
+  color: white;
+  margin-bottom: 22px;
+  --border-radius: 11px;
+}
+
+ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+  line-height: 27px;
+}
+
+ion-label.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.hydrated {
+  line-height: 27px;
+}
+
+ion-row.md.hydrated {
+  background: #fff;
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-row.ios.hydrated {
+  background: #fff;
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-row.label-intro.md.hydrated {
+  background: #fff;
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-row.label-intro.ios.hydrated {
+  background: #fff;
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-label.txt-header.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+  font-weight: bold;
+
+  font-family: "Avenir";
+}
+
+ion-label.txt-header.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.hydrated {
+  font-weight: bold;
+
+  font-family: "Avenir";
+}
+
+ion-grid.md.hydrated {
+  top: 12%;
+  position: fixed;
+  width: 100%;
+}
+
+ion-grid.ios.hydrated {
+  top: 12%;
+  position: fixed;
+  width: 100%;
+}
+
+ion-button.skip-btn.ios.button.button-full.button-solid.ion-activatable.ion-focusable.hydrated {
+  color: #0267ff;
+  text-transform: uppercase;
+  font-family: "Avenir";
+}
+
+ion-button.skip-btn.md.button.button-full.button-solid.ion-activatable.ion-focusable.hydrated {
+  color: #0267ff;
+  text-transform: uppercase;
+  font-family: "Avenir";
+}
+
+ion-slide.md.swiper-slide.swiper-zoom-container.hydrated.swiper-slide-active {
+  box-shadow: 10px 10px 20px #ec763d14, -10px -10px 20px rgb(93 86 86 / 25%);
+  height: 86%;
+  border-radius: 36px;
+  width: 91% !important;
+  margin-left: 16px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+ion-slide.ios.swiper-slide.swiper-zoom-container.hydrated.swiper-slide-active {
+  box-shadow: 10px 10px 20px #ec763d14, -10px -10px 20px rgb(93 86 86 / 25%);
+  height: 86%;
+  border-radius: 36px;
+  width: 91% !important;
+  margin-left: 16px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-height: 429px) {
+  img {
+    height: 171px !important;
+  }
+}
+ion-content.ios.hydrated {
+  --background: white;
+}
+
+ion-content.md.hydrated {
+  --background: white;
+}
